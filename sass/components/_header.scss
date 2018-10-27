@@ -1,0 +1,59 @@
+.container{
+    
+    background-color: $light-1;
+    color: $dark-2;
+}
+
+.header{
+    display: flex;
+    height: 90vh;
+    background-color: $light-1;
+    
+    &_title{
+        align-self: center;
+        flex: 0 0 25%;
+        color: $dark-2;
+        font-family: Cormorant;
+        font-weight: 400;
+        position: relative;
+        z-index: 3;
+        &__main{
+            // position: fixed;
+            margin-top: 15vw;
+            width: 40%;
+        
+            & span{
+                left: 6vw;
+                right: 12vw;
+                width: auto;
+                font-size: 7rem;
+                line-height: 1.2;
+                display: block;
+                position: relative;
+                
+                &.offset_title{
+                    margin-left: 30%;
+                    white-space: nowrap;
+                }
+            }   
+        }
+    }
+    &_slider{
+        flex: 1;
+        padding-bottom: 5vw;
+        display: flex;
+        
+        &__pic{
+            top:-20vw;
+            overflow: hidden;
+            max-height: 100%;
+            max-width: 100%;
+            width: auto;
+            left: 0;
+           
+            display: block;
+            opacity: .8;
+            transform: scaleX(-1);
+        }
+    }
+}

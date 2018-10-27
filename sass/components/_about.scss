@@ -1,0 +1,40 @@
+.about{
+    height: 50vh;
+    background-color: $color-white;
+    margin: 0 auto;
+    padding: 0 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &_avers{
+        background-color: $light-1;
+        height: 25vh;
+        width: 35vh;
+        padding: 3rem;
+        text-align: center;
+        transition: all .3s;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &:hover{
+            background-color: $light-2;
+        }
+        &:hover h1{
+            color: $dark-1;
+            transform: translateX(1rem);
+        }
+        & h1{
+            transition: all .3s;
+            font-size: 6rem;
+            color: $dark-2;
+            transform: translateX(0);
+        }
+        & p{
+            font-size: 1rem;
+            letter-spacing: .2rem;
+            color: $primary-light;
+            text-transform: uppercase;
+            }
+        }
+    }

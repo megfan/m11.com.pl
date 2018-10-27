@@ -1,0 +1,24 @@
+.navbar{
+    height: 7rem;
+    background-color: $color-white;
+    border-bottom: 1px solid $light-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    &_logo{
+        height: 5rem;
+        // padding-top: 1rem;
+        padding-left: 4rem;
+    }
+    &_items{
+        padding-right: 5rem;
+        &_a{
+            padding: 2rem;
+            color: $primary-light;
+            font-size: 1.4rem;            
+        }
+        
+    }
+    
+}

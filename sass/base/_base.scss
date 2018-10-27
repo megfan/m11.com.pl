@@ -1,0 +1,43 @@
+$primary: #9bc2ff;
+$primary-light: #6580a4;
+$primary-dark: #2c5183;
+
+$light-1: #faf9f9;
+$light-2: #eaedf5;
+$light-3: #dee3eb;
+$light-4: #bdd6ff;
+
+$dark-1: rgb(35, 41, 78);
+$dark-2: #101e30;
+$dark-3: #080f18;
+
+$color-white: #fff;
+
+
+//RESPONSIVE BREAKPOINTS
+
+$bp-large: 75em;  //1200px
+$bp-medium: 56.25em;  //900px
+$bp-small: 37.5em;  //600px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62,5%
+}
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-white;
+  background-color: $light-3;
+  min-height: 100vh;
+}

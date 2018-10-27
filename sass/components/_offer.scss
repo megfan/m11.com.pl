@@ -1,0 +1,38 @@
+.offer{
+    height: 100vh;
+    background-color: $color-white;
+    &_content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_pic{
+            flex: 0 0 25%;
+        }
+        &_txt{
+            flex: 1;
+            padding-left: 20rem;
+            & .title{
+                color: $dark-2;
+                font-family: Cormorant;
+                font-weight: 500;
+                font-size: 4rem;
+                &::before{
+                    content: "";
+                    background-color: $primary;
+                    height: 3rem;
+                    width: 5rem;
+                    left: -5rem;
+                    padding-bottom: 2rem;
+                }
+            }
+            & .list{
+                letter-spacing: .2rem;
+                color: $primary-light;
+                line-height: 2.5rem;
+                & li{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
