@@ -1,0 +1,26 @@
+.archive{
+    width: 100vh;
+    background-color: $light-1;
+    &_title{
+        color: $dark-2;
+        font-family: Cormorant;
+        font-weight: 400;
+    }
+    &_gallery{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        &_box{
+            background-image: url("https://firebasestorage.googleapis.com/v0/b/m-11-25231.appspot.com/o/archive%2F001.jpg?alt=media&token=63bb950b-e5dd-4029-bebc-2c1cc5b29a96");
+            background-size: cover;
+            width: 25%;
+            height: 30vh;
+            margin: 5px;
+            transition: all .5s ease;
+            transform: scale(1);
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+    }
+}
